@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <title>{{ page.title }}</title>
+	<meta name="author" content="{{ site.author }}">
+	<meta name="description" content="A project by {{ site.author }}">
+
+    <!-- Facebook Open Graph -->
+    <meta property="og:image" content="{{ site.url }}{{ page.coverImageUrl }}" />
+
+    {% include head.html %}
+</head>
+
+<body>
+    <header>
+        <div class="page-nav-space-holder hidden-xs">
+            <div id="page-nav-wrapper" class="page-nav-wrapper text-center">
+                <div class="container">
+                    <ul id="page-nav" class="nav page-nav list-inline">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a class="scrollto" href="#project-section">Project</a></li>
+                        <li><a class="scrollto" href="#skills-section">Skills</a></li>
+                    </ul><!--//page-nav-->
+                </div>
+            </div><!--//page-nav-wrapper-->
+        </div>
+    </header><!--//header-->
+
+    <div class="wrapper container">
+        <section id="project-section" class="project-section section">
+            {{ content }}
+        </section><!--//section-->
+
+        <section id="skills-section" class="skills-section section text-center">
+            <div class="other-skills">
+                <h3 class="subtitle">Skills Used</h3>
+                <div class="misc-skills">
+                    {% for skill in page.skills %}
+                    <span class="skill-tag">{{ skill }}</span>
+                    {% endfor %}
+                </div>
+            </div><!--//other-skills-->
+        </section><!--//skills-section-->
+    </div><!--//wrapper-->
+
+    <footer class="footer text-center">
+        {% include footer.html %}
+    </footer>
+
+    {% include scripts.html %}
+</body>
+</html>

@@ -1,0 +1,44 @@
+---
+layout: portfolio
+title: TeleSpider
+description: search &amp; rescue robot
+date: 2016-05-01 00:00:00 -0800
+skills: [C, C++, Embedded Systems]
+coverImageUrl: "/assets/images/portfolio/telespider.jpg"
+tags: [embedded]
+---
+
+<div class="row">
+    <div class="item col-xs-12 col-sm-8">
+        <div class="item-inner">
+            <div class="project-body">
+                <h1>
+					{{ page.title }}
+					<small class="text-muted">{{ page.description }}</small>
+				</h1>
+                <p>
+                    Nicknamed "TeleSpider", this robot is a hexapod designed to aid in ground disaster (e.g. earthquake, fire, etc.) search and rescue operations. The robot is controlled remotely by a user using a VR headset and a controller.
+                </p>
+                <p>
+                    As Robotics Prototype Engineer with Archiact, I worked in a team of 5 to develop TeleSpider. Over the course of the project I:
+                </p>
+                <ul>
+                    <li>Redesigned the main circuit board using DipTrace, minimizing board footprint by 50%</li>
+                    <li>Improved the main circuit design, eliminating prior issues while adding new functionality</li>
+                    <li>Implemented robot vision using OpenGL C++, minimizing lag for virtual reality consumption</li>
+                    <li>Weather-proofed robot components, attaining uninterrupted operation under extreme conditions</li>
+                </ul>
+                <p>
+                    Learn more at <a href="http://ispace.iat.sfu.ca/project/telespider/" target="_blank">http://ispace.iat.sfu.ca/project/telespider/</a>.
+                </p>
+            </div><!--//project-body-->
+        </div><!--//item-inner-->
+    </div><!--//item-->
+    <div class="item col-xs-12 col-sm-4">
+        <div class="item-inner">
+            <figure class="figure">
+                <img class="img-responsive" src="{{ page.coverImageUrl }}" alt="" />
+            </figure>
+        </div><!--//item-inner-->
+    </div><!--//item-->
+</div><!--//row-->

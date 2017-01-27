@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <title>{{ site.title }}</title>
+	<meta name="author" content="{{ site.author }}">
+	<meta name="description" content="{{ site.description }}">
+
+    <!-- Facebook Open Graph -->
+    <meta property="og:image" content="{{ site.url }}{{ site.profile_image_location }}" />
+
+    {% include head.html %}
+</head>
+
+<body>
+    <header class="header">
+        <div class="top-bar container-fluid">
+            <ul class="social list-inline">
+                <li><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/{{ site.github_username }}" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+            </ul><!--//social-->
+        </div><!--//top-bar-->
+
+        <div class="intro">
+            <div class="container text-center">
+                <img class="profile-image" src="{{ site.profile_image_location }}" alt="">
+                <h1 class="name">Kyle Garsuta</h1>
+                <div class="title">Computer Engineering</div>
+                <div class="profile">
+                    <p>I enjoy technology, computers, and really like building things. As a problem solver, I like to be technology agnostic. I believe in choosing technologies that best solve given problems – not the other way around. You can find out more about my recent endeavours and projects on this site.</p>
+                </div><!--//profile-->
+            </div><!--//container-->
+        </div><!--//intro-->
+
+        <div class="page-nav-space-holder hidden-xs">
+            <div id="page-nav-wrapper" class="page-nav-wrapper text-center">
+                <div class="container">
+                    <ul id="page-nav" class="nav page-nav list-inline">
+                        <li><a class="scrollto" href="#portfolio-section">Projects</a></li>
+                        <li><a class="scrollto" href="#skills-section">Skills</a></li>
+						<li><a class="scrollto" href="#experiences-section">Experience</a></li>
+                        <li><a class="scrollto" href="#education-section">Education</a></li>
+                    </ul><!--//page-nav-->
+                </div>
+            </div><!--//page-nav-wrapper-->
+        </div>
+
+    </header><!--//header-->
+
+    <div class="wrapper container">
+        {{ content }}
+    </div><!--//wrapper-->
+
+    <footer class="footer text-center">
+        {% include footer.html %}
+    </footer>
+
+    {% include scripts.html %}
+</body>
+</html>
