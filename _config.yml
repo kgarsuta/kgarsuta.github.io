@@ -4,7 +4,6 @@ description: Professional portfolio of Kyle Garsuta
 baseurl: ""
 url: https://kgarsuta.com
 profile_image_location: /assets/images/profile-image.png
-github_username: kgarsuta
 linkedin_username: kgarsuta
 
 # Build settings
